@@ -1,0 +1,9 @@
+body{
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+fundo = 1{
+background-image: url("img/back_1");
+}fundo =2{
+background-image: url("img/back_2");
+}

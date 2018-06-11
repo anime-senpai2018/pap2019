@@ -1,0 +1,166 @@
+<?php
+// Inicia a sesão
+session_start();
+ 
+// Quando a sesão termina é redencionada para a pagina login
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  exit;
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/tema.css">
+</head>
+<body background="img\back_black.jpg" >
+<!-- Barra de navegação -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">
+ <img src="img\gg.png" width="40" height="40" alt="40">
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="novidades.php">Novidades</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="series.php">Lista</a>
+      </li>
+      </ul>
+<div class="dropdown">
+    &emsp;&emsp;&emsp;&emsp;&ensp;&ensp;<input class="btn btn-primary dropdown-toggle" type="image" src="img/user1.png" alt="Submit" width="50" height="40" data-toggle="dropdown"></input>
+    <span class="caret"></span></button>
+    <ul class="btn btn dropdown-menu">
+    <li class="dropdown-header" align=center><?php echo htmlspecialchars($_SESSION['username']); ?></li>
+      <li><a class="nav-link" style="color:black" href="perfil.php" align=center>Perfil</a></li>
+      <li><a class="nav-link" style="color:black" href="#" align=center>Favoritos</a></li>
+	  <li><a class="nav-link" style="color:black" href="#" align=center>Vistos</a></li>
+	<li class="dropdown-header">Terminar Sessao</li> 
+	  <li><a class="nav-link" href="logout.php" style="color:black" align=center> Terminar </a></li>
+    </ul>
+  </div>
+    </div>
+    </ul>
+  </div>
+</nav>
+
+<body>
+<table bordeer="0" align="left">
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Animes 2018</big></big></strong>
+		<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 24, Janeiro , 2018
+		</th>
+	<tr>
+		<td><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="img/novidades.jpg" class="img-thumbnail" width="720" height="405">
+
+	<tr>	
+		<br><th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2018 promete ser um ano em grande para os fãs da Cultura Japonesa, não perca os Melhores Animes deste Ano
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; Seguem abaixo a lista dos animes mais esperados deste ano :
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10: Violet Evergarden</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/uHgVobuQXxM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; A história gira em torno de uma Autômata de Automemórias: autômatas inicialmente foram criadas por um cientista para ajudar a sua mulher cega
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; na escrita dos seus romances, e posteriormente alugadas para outras pessoas que necessitavam dos seus serviços. 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Embora a função inicial destes Autômatos fosse apenas para transformar voz em texto, um segundo grupo de pessoas criou uma empresa que
+                                <br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; alugava belas e talentosas mulheres que, apesar de terem a mesma função que o original do Autômato de Automemórias, também pode executar
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; milhares de tarefas.
+		<br>
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;9: Steins; Gate 0</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/oC37jmMX6CM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Steins; Gate 0 é um próximo anime série de televisão criada por White Fox , com a ajuda de 5pb. A série é uma sequela da série de anime de 2011,
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; Steins; Gate , e está prevista para estrear em abril de 2018. É dirigida por Kenichi Kawamura e escrita por Jukki Hanada , que também escreveu
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; o primeiro Steins, Gate .
+                                <br><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; A voz emitida pelos anteriores Steins; Gate ,o anime e os jogos do Gate voltam aos seus papéis.
+		<br>
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8: Toaru majutsu no index 3</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/1616_WRYZmo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Devido a uma fuga de informação do programa Aniculbu! (Anime Culture Club) foi confirmado que está em produção uma 3ª temporada de
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;  Toaru Majutsu no Index (A Certain Magical Index).
+		<br>
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;7: OverLord 2</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/n9YMScP8S_8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Desde que ficou preso no outro mundo, Ains enviou comandos diários como o governante do Grande túmulo de Nazarick. Este também mantém seu 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; alter ego Momon, o mais forte aventureiro de E-Rantel, para recolher fundos e manter um par de orelhas no chão. Ele apenas se pronuncia em Missoes 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; consideradas adequadas para um aventureiro da classe adamantite, como derrotar o Gigant Basilisk. Enquanto isso, Ains volta a Nazarick e pede a 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; Albedo um relatório da situação completo.
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6: Beatless</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/ZxUmZfukG4o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Com a introdução de um AI ultra-avançado que ultrapassa a inteligência humana, os seres que a humanidade ainda não compreendeu completamente,
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; feitos de materiais muito avançados para a tecnologia humana, começam a surgir. Lacia, um HIE equipado com um dispositivo preto em forma de caixão,
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; é um desses. Na moda entre garotas e garotas, Arato Endo, de 17 anos, encontra um encontro fatídico com a Lacia artificial.
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Para que fins esses seres artificiais foram criados? Em meio a questões relativas à convivência desses seres artificiais e humanos, um menino de 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; 17 anos toma uma decisão ...
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5: One Punch Man 2</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/EB_FaaDx-lA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Apesar de ter sido anunciada no começo do ano, ainda não existe uma previsão oficial para a estreia da segunda temporada de One Punch Man.
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Baseado no mangá homônimo de ONE, o anime mostra as aventuras de Saitama, um super-herói extremamente poderoso e entediado
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; que está em busca de um oponente à sua altura.
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Na segunda temporada, o estúdio Madhouse e o diretor Shingo Natsume serão substituídos pela J.C. Staff e por Chikara Sakurai, respectivamente,
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; ambos responsáveis por Food Wars: Shokugeki no Souma.
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4: Tokyo Ghoul:RE</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/aRxaJolaWOc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Tokyo Ghoul:RE  é uma sequela de Tokyo Ghoul  escrita por Sui Ishida .
+		<br><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Dois anos se passaram desde o ataque da CCG no Anteiku. Embora a atmosfera em Tóquio tenha mudado drasticamente devido à crescente
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; influência do GCC, os ghouls continuam a apresentar um problema, já que começaram a tomar cautela, especialmente a organização terrorista 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; Aogiri Tree, que reconhece a crescente ameaça do CCG para sua existência.
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3: High School DxD Hero</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/xEg6CvcCQy0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Foi anunciado no evento de Fantasia Bunko no Japão, uma nova temporada para High School DxD, neste caso a 4ª temporada do anime.
+		<br><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; A série acompanha um garoto que é reencarnado como um demónio do clã da garota mais bonita do seu colégio. O próprio Autor disse
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; que apesar de muitos ficarem incrédulos quando este falou para esperarem 2 anos pelo anuncio. Mas na verdade apenas tiveram de esperar 1 ano.
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2: Sword Art Online: Alicization</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/-L19ao2w4ro" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Kirito desperta em uma vasta e fantástica floresta cheia de árvores altas. Na busca de pistas para a verdade do seu entorno, ele encontra um jovem 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; que parece conhecê-lo. Ele deveria ser um simples NPC, mas a profundidade de suas emoções não parece diferente de um ser humano. Enquanto 
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; procuram os pais do menino, Kirito encontra uma lembrança peculiar voltando para ele. Uma lembrança de sua própria infância, desse menino e uma
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; menina, também, com cabelos dourados, e um nome que ele nunca deveria ter esquecido - Alice.
+	<tr>
+		<th><br><br><br><strong><big><big><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1: Fairy Tail 2018</big></big></strong>
+	<tr>
+		<th><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe width="854" height="480" src="https://www.youtube.com/embed/0HyP7dNAvhY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<tr>	
+		<th><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; E aqui está o Anime mais esperado de 2018, Fairy Tail, aguardado por milhares de fãs em todo o mundo finalmente vai voltar.
+		<br><br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; O mangaka Hiro Mashima revelou no seu twitter que a “Temporada final” de Fairy Tail vai ser exibida nas TVs em 2018.
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; O manga de Fairy Tail terminou em julho de 2017, com o capítulo “Irreplaceable Friends” (Amigos Insubstituíveis) composto por 48 páginas.
+		<br><strong><p= style="color:white">&emsp;&emsp;&emsp;&emsp;&emsp; É provável que Fairy Tail não tenha o mesmo fim do manga.
+	<tr>
+		<td><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="img/twiter.png" width="360" height="140">
+		<br>
+		<br>	
+</html>

@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<br>
+<body style="background-color:black;">
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="0"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+      <a style="color:white" class="nav-link" href="novidade animes2018.php" target="#">
+        <img src="img/3.jpg" alt="#">
+        <div class="carousel-caption">
+</a>
+          <h3>Animes 2018</h3>
+          <p>Veja ja os animes mais esperados para este ano!</p>
+        </div>
+      </div>
+
+      <div class="item">
+<a style="color:white" class="nav-link" href="Novidade FateExtra Last Encore.php" target="#">
+        <img src="img/2.png" alt="#">
+        <div class="carousel-caption">
+</a>
+          <h3>Fate/Extra Last Encore </h3>
+          <p>Novo Trailer de Fate/Extra Last Encore </p>
+        </div>
+      </div>
+ 
+<div class="item">
+<a style="color:white" class="nav-link" href="Novidade Sword Art Online Progressive.php" target="#">
+        <img src="img/5.png" alt="#">
+        <div class="carousel-caption">
+</a>
+          <h3>Sword Art Online Progressive</h3>
+          <p>"Anuncio importante"</p>
+        </div>
+      </div>
+  
+<div class="item">
+<a style="color:white" class="nav-link" href="novidade Nanatsu no taizai 2.php" target="#">
+        <img src="img/1.jpg" alt="#">
+        <div class="carousel-caption">
+</a>
+          <h3>Nanatsu no Taizai: Prisoners of the Sky</h3>
+          <p>Trailer do filme anime de Nanatsu no Taizai</p>
+        </div>
+      </div>
+  
+<div class="item">
+<a style="color:white" class="nav-link" href="novidade K.php" target="#">
+        <img src="img/4.png" alt="#">
+        <div class="carousel-caption">
+</a>
+          <h3>K: Seven Stories</h3>
+          <p>Novo Trailler da nova temporada de K</p>
+        </div>
+      </div>
+  
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<?php require 'header.php'?>
+<!-- Class principal do boostrap -->
+<div class="content">
+
+</div>
+<!-- Class prinpical do boostrap termina -->
+</body>
+
+</html>
